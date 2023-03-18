@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {DialogModule} from 'primeng/dialog';
+
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
@@ -13,6 +16,8 @@ import { ProductComponent } from './product/product.component';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
+    DialogModule,
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
     ])

@@ -4,6 +4,14 @@
   </a>
 </h3>
 
+<button
+type="button"
+(click)="showDialog()"
+icon="pi pi-info-circle"
+label="Mostrar"
+></button>
+
+
 <p *ngIf="product.description">Description: {{ product.description }}</p>
 
 <button type="button" (click)="share()">Share</button>

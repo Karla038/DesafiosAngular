@@ -15,4 +15,12 @@ export class ProductComponent {
   onNotify() {
     window.alert('You will be notified when the product goes on sale');
   }
+
+  display: boolean = false;
+  showDialog() {
+    this.display = true;
+  }
+
+  
+
 }
